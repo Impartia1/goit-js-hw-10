@@ -28,74 +28,8 @@
     <select id="breed-selector" class="breed-select"></select>
     <p class="loader">Loading data, please wait...</p>
     <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info">
-      <!-- <img alt="Cat" src=" " id="breed_image" /> -->
-      <!-- <p id="decsription"></p>
-      <p id="temperament"></p> -->
-    </div>
+    <div class="cat-info"></div>
 
     <script src="index.js" type="module"></script>
-    <script>
-      // const url = `https://api.thecatapi.com/v1/breeds`;
-      // const api_key =
-      //   'live_ZwtdVVmq75qDAnNdIkPEL2JRy2O3vpU1TfgoghmTQxNEfWyXdWmUQ7dJ7UUpUHIc';
-      // let storedBreeds = [];
-
-      // fetch(url, {
-      //   headers: {
-      //     'x-api-key': api_key,
-      //   },
-      // })
-      //   .then(response => {
-      //     return response.json();
-      //   })
-      //   .then(data => {
-      //     //filter to only include those with an `image` object
-      //     data = data.filter(img => img.image?.url != null);
-
-      //     storedBreeds = data;
-
-      //     for (let i = 0; i < storedBreeds.length; i++) {
-      //       const breed = storedBreeds[i];
-      //       let option = document.createElement('option');
-
-      //       //skip any breeds that don't have an image
-      //       if (!breed.image) continue;
-
-      //       //use the current array index
-      //       option.value = i;
-      //       option.innerHTML = `${breed.name}`;
-      //       document.querySelector('.breed-select').appendChild(option);
-      //     }
-      //     //    show the first breed by default
-      //     // showBreedImage(0);
-      //     // showBreedImage(10);
-      //   })
-      //   .catch(function (error) {
-      //     console.log(error);
-      //   });
-      // function showBreedImage(index) {
-      //   const divRef = document.querySelector('.cat-info');
-      //   const imgElement = divRef.querySelector('img');
-
-      //   if (imgElement) {
-      //     imgElement.src = storedBreeds[index].image.url;
-      //   } else {
-      //     let imgRef = document.createElement('img');
-
-      //     document.querySelector('.cat-info').appendChild(imgRef);
-      //     imgRef.src = storedBreeds[index].image.url;
-      //   }
-
-      //   document.getElementById('temperament').textContent =
-      //     storedBreeds[index].temperament;
-
-      //   document.getElementById('decsription').textContent =
-      //     storedBreeds[index].description;
-
-      //   //   document.getElementById("wiki_link").href= storedBreeds[index].wikipedia_url
-      //   //   document.getElementById("wiki_link").innerHTML= storedBreeds[index].wikipedia_url
-      // }
-    </script>
   </body>
 </html>
